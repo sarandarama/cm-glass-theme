@@ -1,0 +1,150 @@
+{
+  "name": "CmGlassTheme",
+  "author": "Coders Mirror",
+  "views": [
+    "@Storefront",
+    "@Plugins",
+    "@CmGlassTheme"
+  ],
+  "style": [
+    "app/storefront/src/scss/overrides.scss",
+    "@Storefront",
+    "app/storefront/src/scss/base.scss"
+  ],
+  "script": [
+    "@Storefront",
+    "app/storefront/dist/storefront/js/cm-glass-theme.js"
+  ],
+  "asset": [
+    "@Storefront",
+    "app/storefront/src/assets"
+  ],
+  "configInheritance": [
+    "@Storefront"
+  ],
+  "config": {
+    "fields": {
+      "modal-padding": {
+        "label": {
+          "en-GB": "Modal padding",
+          "de-DE": "Modal Innenabstand"
+        },
+        "type": "text",
+        "value": "(0, 0, 0, 0)",
+        "editable": true
+      },
+      "visible-slides": {
+        "label": {
+          "en-GB": "Number of visible slides",
+          "de-DE": "Anzahl an sichtbaren Slider Bildern"
+        },
+        "type": "number",
+        "custom": {
+          "numberType": "int",
+          "min": 1,
+          "max": 6
+        },
+        "value": 3,
+        "editable": true
+      },
+      "navigation-fixed": {
+        "label": {
+          "en-GB": "Fix navigation",
+          "de-DE": "Navigation fixieren"
+        },
+        "type": "switch",
+        "value": true,
+        "editable": true
+      },
+      "navigation-fixed-2": {
+        "label": {
+          "en-GB": "Fix navigation",
+          "de-DE": "Navigation fixieren"
+        },
+        "type": "checkbox",
+        "value": true,
+        "editable": true
+      },
+      "my-single-select-field": {
+        "label": {
+          "en-GB": "Select a font size",
+          "de-DE": "Wähle ein Schriftgröße"
+        },
+        "type": "text",
+        "value": "24",
+        "custom": {
+          "componentName": "sw-single-select",
+          "options": [
+            {
+              "value": "16",
+              "label": {
+                "en-GB": "16px",
+                "de-DE": "16px"
+              }
+            },
+            {
+              "value": "20",
+              "label": {
+                "en-GB": "20px",
+                "de-DE": "20px"
+              }
+            },
+            {
+              "value": "24",
+              "label": {
+                "en-GB": "24px",
+                "de-DE": "24px"
+              }
+            }
+          ]
+        },
+        "editable": true
+      },
+      "my-multi-select-field": {
+        "label": {
+          "en-GB": "Select some colours",
+          "de-DE": "Wähle Farben aus"
+        },
+        "type": "text",
+        "editable": true,
+        "value": [
+          "green",
+          "blue"
+        ],
+        "custom": {
+          "componentName": "sw-multi-select",
+          "options": [
+            {
+              "value": "green",
+              "label": {
+                "en-GB": "green",
+                "de-DE": "grün"
+              }
+            },
+            {
+              "value": "red",
+              "label": {
+                "en-GB": "red",
+                "de-DE": "rot"
+              }
+            },
+            {
+              "value": "blue",
+              "label": {
+                "en-GB": "blue",
+                "de-DE": "blau"
+              }
+            },
+            {
+              "value": "yellow",
+              "label": {
+                "en-GB": "yellow",
+                "de-DE": "gelb"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
