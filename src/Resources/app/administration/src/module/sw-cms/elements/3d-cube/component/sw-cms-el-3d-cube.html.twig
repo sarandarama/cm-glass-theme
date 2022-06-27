@@ -1,0 +1,22 @@
+{% block sw_cms_element_component_3d_cube %}
+    <div style="height: 500px">
+        <div class="component-body">
+            <div class="component-container">
+                <div class="component-cube">
+                    <template v-if="mediaUrls && mediaUrls.length">
+                        <sw-media-list-selection-item-v2
+                            v-for="(sliderItem, index) in mediaUrls"
+                            v-if="index < galleryLimit"
+                            :key="index"
+                            :item="sliderItem.media"
+                            :class="activeMediaClass(sliderItem.media)"
+                            hide-actions
+                            hide-tooltip
+                            @click="onChangeGalleryImage(sliderItem.media, index)"
+                        />
+                    </template>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

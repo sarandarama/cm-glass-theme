@@ -1,0 +1,1 @@
+import './module/sw-cms/elements/3d-cube'

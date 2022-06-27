@@ -1,0 +1,29 @@
+{% block sw_cms_element_preview_3d_cube %}
+    <div class="body">
+        <div class="container">
+            <div class="cube">
+                <div class="surface surface1">
+                    <img :src="'/administration/static/img/cms/preview_plant_small.jpg' | asset"
+                         alt="3D Cube Image 1"
+                         title="3D Cube Image 1">
+                </div>
+                <div class="surface surface2">
+                    <img :src="'/administration/static/img/cms/preview_plant_small.jpg' | asset"
+                         alt="3D Cube Image 2"
+                         title="3D Cube Image 2">
+                </div>
+                <div class="surface surface3">
+
+                    <img :src="'/administration/static/img/cms/preview_camera_small.jpg' | asset"
+                         alt="3D Cube Image 3"
+                         title="3D Cube Image 3">
+                </div>
+                <div class="surface surface4">
+                    <img :src="'/administration/static/img/cms/preview_glasses_small.jpg' | asset"
+                         alt="3D Cube Image 4"
+                         title="3D Cube Image 4">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

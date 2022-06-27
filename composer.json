@@ -1,8 +1,20 @@
 {
   "name": "cm/glass-theme",
-  "description": "CM Glass Theme",
+  "description": "Glass Theme",
+  "version": "v1.0.0",
   "type": "shopware-platform-plugin",
-  "license": "MIT",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Coders Mirror GmbH"
+    }
+  ],
+  "require": {
+    "ext-json": "*",
+    "shopware/core": "~6.4",
+    "shopware/administration": "~6.4",
+    "shopware/storefront": "~6.4"
+  },
   "autoload": {
     "psr-4": {
       "CmGlassTheme\\": "src/"
@@ -11,8 +23,20 @@
   "extra": {
     "shopware-plugin-class": "CmGlassTheme\\CmGlassTheme",
     "label": {
-      "de-DE": "CM Glass Theme",
-      "en-GB": "CM Glass Theme"
+      "de-DE": "Glas-Theme",
+      "en-GB": "Glass Theme"
+    },
+    "description": {
+      "de-DE": "Glas-Theme mit angepasstem Thema, Produkt-Detailseite, neuen Blöcken und Inline-Elementen.",
+      "en-GB": "Glass Theme with customized theme, product details page, new blocks and inline elements"
+    },
+    "manufacturerLink": {
+      "de-DE": "https://codersmirror.com",
+      "en-GB": "https://codersmirror.com"
+    },
+    "supportLink": {
+      "de-DE": "https://codersmirror.com",
+      "en-GB": "https://codersmirror.com"
     }
   }
 }
